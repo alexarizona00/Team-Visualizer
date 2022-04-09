@@ -1,13 +1,17 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
-let questions = require('./utils/randomstuff')
+const extras = require('./utils/randomstuff')
+const Employee = require('./utils/employeeclass')
+const Manager = require('./utils/managersubclass')
+const Engineer = require('./utils/engineersubclass')
+const Intern = require('./utils/internsubclass')
 
 
-inquirer
-    .prompt([
-        ...questions
-    ])
-    .then((answers) => {
-                  
-        generateMarkdown(answers)
-    });
+
+
+let steve = new Intern(`33123`, '1234','me@2u.com','johnny hopkins');
+
+
+
+
+// extras.askQuestions()
