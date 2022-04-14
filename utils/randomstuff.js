@@ -19,7 +19,7 @@ function compileHtml(team) {
         <ul class="list-group list-group-flush">
           <li class="list-group-item">My name is ${team.theirname}</li>
           <li class="list-group-item">Id#${team.id}</li>
-          <li class="list-group-item">Reach me at ${team.email}</li>
+          <li class="list-group-item">Reach me at <a href="mailto:${team.email}">${team.email}</a></li>
           <li class="list-group-item">You can find me in office ${team.officenumber}</li>
         </ul>
         </div>`
@@ -37,8 +37,8 @@ function compileHtml(team) {
         <ul class="list-group list-group-flush">
           <li class="list-group-item">My name is ${team.theirname}</li>
           <li class="list-group-item">Id#${team.id}</li>
-          <li class="list-group-item">Reach me at ${team.email}</li>
-          <li class="list-group-item">See my latest work at https://www.github.com/${team.github}</li>
+          <li class="list-group-item">Reach me at <a href="mailto:${team.email}">${team.email}</a></li>
+          <li class="list-group-item">See my latest work on <a href="https://www.github.com/${team.github}"> My Github </a></li>
         </ul>
         </div>`
 
@@ -53,7 +53,7 @@ function compileHtml(team) {
             <ul class="list-group list-group-flush">
               <li class="list-group-item">My name is ${team.theirname}</li>
               <li class="list-group-item">Id#${team.id}</li>
-              <li class="list-group-item">Reach me at ${team.email}</li>
+              <li class="list-group-item">Reach me at <a href="mailto:${team.email}">${team.email}</a></li>
               <li class="list-group-item">I currently attend ${team.school}</li>
             </ul>
             </div>`
