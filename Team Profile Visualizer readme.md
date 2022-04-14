@@ -69,10 +69,9 @@ on [Github](https://www.github.com/https://github.com/alexarizona00)
 
 # Testing
 
-
-
-
-
+npm test manager.test.js
+npm test engineer.test.js
+npm test intern.test.js
 
 
 ## Take me back to the [Top!](#project)
