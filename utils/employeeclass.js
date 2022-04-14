@@ -5,16 +5,16 @@ class Employee {
         this.email = email;
     }
     getName() {
-        returnthis.name
+        return this.theirname
     }
 
     getId() {
-        console.log(this.id)
+      return this.id
 
     }
 
     getEmail() {
-        console.log(this.email)
+        return this.email
 
     }
 
